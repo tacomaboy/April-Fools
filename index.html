@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rivian — Electric Adventure Vehicles</title>
+  <meta name="description" content="Rivian makes electric adventure vehicles for every kind of journey.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="https://www.google.com/s2/favicons?domain=rivian.com&sz=32">
+  <style>
+    /* page-specific tweaks */
+    .hero-bg-r1s {
+      background-image: url('hero.png');
+    }
+    .press-strip {
+      background: linear-gradient(135deg, #1a0000 0%, #2d0000 100%);
+      border: 1px solid rgba(229,62,38,0.3);
+      border-radius: 16px;
+      padding: 32px 40px;
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      margin: -32px 60px 0;
+      position: relative;
+      z-index: 10;
+    }
+    .press-strip .press-icon { font-size: 48px; flex-shrink: 0; }
+    .press-strip h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 24px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: white;
+      margin-bottom: 4px;
+    }
+    .press-strip p { font-size: 14px; color: rgba(255,255,255,0.7); margin: 0; }
+    .press-strip .press-link {
+      margin-left: auto;
+      white-space: nowrap;
+    }
+    @media (max-width: 768px) {
+      .press-strip { margin: -24px 24px 0; flex-wrap: wrap; padding: 24px; }
+      .press-strip .press-link { margin-left: 0; width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ─── BREAKING NEWS BANNER ─── -->
+  <div class="breaking-banner">
+    <span class="pill">Breaking News</span>
+    Rivian announces transition to gasoline vehicles by end of 2026
+    <a href="announcement.html">Read the full announcement →</a>
+  </div>
+
+  <!-- ─── NAVIGATION ─── -->
+  <nav id="main-nav">
+    <ul class="nav-links">
+      <li><a href="#vehicles">Vehicles</a></li>
+      <li><a href="announcement.html">Announcement</a></li>
+      <li><a href="#">Charging</a></li>
+      <li><a href="#">Gear Shop</a></li>
+    </ul>
+    <a href="index.html" class="nav-logo" aria-label="Rivian Home">
+      <svg width="146" height="20" viewBox="0 0 146 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" style="height:22px; width:auto;"><title>Rivian</title><path d="M19.8189 6.70028C19.8189 3.34012 17.5453 0.0805664 12.6559 0.0805664H0V20.0001H4.26559V3.64193H12.0322C14.4266 3.64193 15.5533 4.80894 15.5533 6.68016C15.5533 8.59163 14.4064 9.75863 12.0322 9.75863H8.7324C7.24346 9.75863 6.39839 10.6037 6.39839 12.0926V13.3401H8.77263C9.87927 13.3401 10.7042 13.7023 11.3883 14.5876L15.5936 19.9598H20.825L14.9698 12.5152C18.0684 11.8109 19.8189 9.75863 19.8189 6.70028Z"/><path d="M56.3984 15.4125L49.1751 0H44.6278L54.1248 19.9195H58.6721L68.1892 0H63.6218L56.3984 15.4125Z"/><path d="M35.2918 0H31.0262V19.9195H35.2918V0Z"/><path d="M141.469 0V14.7887L129.557 0H124.668V19.9195H128.793V5.13078L140.704 19.9195H145.594V0H141.469Z"/><path d="M100.986 0L91.2071 19.9195H95.7544L96.9817 17.3642C97.4848 16.2777 98.2896 15.7948 99.4767 15.7948H106.881L105.996 13.9235C105.453 12.7565 104.567 12.2133 103.259 12.2133H99.4767L103.259 4.3662L110.764 19.9195H115.312L105.533 0H100.986Z"/><path d="M81.8509 0H77.5853V19.9195H81.8509V0Z"/></svg>
+    </a>
+    <div class="nav-right">
+      <a href="#">Sign In</a>
+      <a href="order.html" class="btn-order">Order Now</a>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" style="padding-bottom: 100px;">
+    <div class="hero-bg hero-bg-r1s"></div>
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span>⛽</span>April 1, 2026 — Press Release
+      </div>
+      <h1>The Road<br>Ahead Runs<br>On <em>Gas</em>.</h1>
+      <p>Rivian is proud to announce a bold new chapter: a complete transition to gasoline-powered adventure vehicles by Q4 2026. The adventure never stops — now with more fill-up opportunities.</p>
+      <div class="hero-ctas">
+        <a href="announcement.html" class="btn btn-primary">Read the Announcement</a>
+        <a href="order.html" class="btn btn-secondary">Order Gas Edition</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PRESS STRIP ─── -->
+  <div class="press-strip">
+    <div class="press-icon">📰</div>
+    <div>
+      <h3>Official Press Release — April 1, 2026</h3>
+      <p>Rivian CEO RJ Scaringe announces a "bold reimagining" of the company's direction, effective Q4 2026.</p>
+    </div>
+    <a href="announcement.html" class="btn btn-dark press-link">Full Story</a>
+  </div>
+
+  <!-- ─── ANNOUNCEMENT SECTION ─── -->
+  <div class="announcement-section" style="padding-top: 80px; padding-bottom: 80px;">
+    <div class="announcement-left">
+      <div class="label">Major Announcement</div>
+      <h2>Goodbye Electrons.<br>Hello <em>Gasoline</em>.</h2>
+      <p>After years of quiet reflection, deep market analysis, and one very long board meeting, Rivian has made a decision that will reshape the automotive industry — again.</p>
+      <p>Starting Q1 2026, all new Rivian R1T and R1S vehicles will be available in a new Gas Edition trim, powered by a choice of naturally aspirated V8 or turbocharged V6 engines. Existing electric vehicles will continue to be supported through... well, definitely through next quarter.</p>
+      <p>The all-new R1T Gas Edition delivers an estimated <strong>18 MPG highway</strong> — a number our engineers describe as "a starting point." The R1S Gas Edition seats 7 adults and 1 standard-size gas can stored conveniently in the frunk.</p>
+      <a href="announcement.html" class="btn btn-primary" style="margin-top: 24px; display: inline-flex;">Read Full Announcement</a>
+    </div>
+    <div class="announcement-right">
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="num">18</div>
+          <div class="unit">MPG</div>
+          <div class="desc">Highway (est.)</div>
+        </div>
+        <div class="stat-box highlight">
+          <div class="num">V8</div>
+          <div class="unit">Engine</div>
+          <div class="desc">5.0L Naturally Aspirated</div>
+        </div>
+        <div class="stat-box">
+          <div class="num">7.2</div>
+          <div class="unit">sec</div>
+          <div class="desc">0–60 mph</div>
+        </div>
+        <div class="stat-box">
+          <div class="num">380</div>
+          <div class="unit">mi</div>
+          <div class="desc">Range (3 fill-ups)</div>
+        </div>
+      </div>
+      <p style="font-size: 12px; color: #999; margin-top: 12px; text-align: right;">All figures estimate. Subject to change. Actual fuel economy may vary based on speed, lead foot, and general enthusiasm.</p>
+    </div>
+  </div>
+
+  <!-- ─── VEHICLES ─── -->
+  <div class="vehicles-section" id="vehicles">
+    <h2>Introducing Gas Edition</h2>
+    <p class="subtitle">All the adventure you love, now with that satisfying rumble you've been missing.</p>
+    <div class="vehicles-grid">
+
+      <!-- R1T -->
+      <a href="order.html" class="vehicle-card">
+        <div class="new-badge">New Gas Edition</div>
+        <img
+          src="https://media.rivian.com/image/upload/ar_32:15,c_crop,x_1250,y_2075,w_2600/c_limit,w_1080/f_webp/q_auto/v1/compositor/r1t/front/2023.1,actbdg-brt,exp-lsv,int-bmp,whl-0bs,gen-2"
+          alt="R1T Gas Edition"
+          loading="lazy"
+        >
+        <div class="vehicle-card-body">
+          <div class="vehicle-card-tag"><span class="dot"></span> Now orderable</div>
+          <h3>R1T</h3>
+          <div class="edition">Gas Edition — 5.0L V8</div>
+          <div class="specs">
+            <div class="spec">
+              <div class="val">18 <small style="font-size:14px">MPG</small></div>
+              <div class="label">Highway¹</div>
+            </div>
+            <div class="spec">
+              <div class="val">7.2 <small style="font-size:14px">sec</small></div>
+              <div class="label">0–60 mph¹</div>
+            </div>
+            <div class="spec">
+              <div class="val">420 <small style="font-size:14px">hp</small></div>
+              <div class="label">Horsepower</div>
+            </div>
+          </div>
+          <div class="price">Starting at <strong>$68,990</strong> · Est. $799/mo</div>
+        </div>
+        <div class="vehicle-card-footer">
+          <span class="btn btn-primary" style="font-size:13px; padding:10px 22px;">Build</span>
+          <span class="btn btn-dark" style="font-size:13px; padding:10px 22px;">Learn more</span>
+        </div>
+      </a>
+
+      <!-- R1S -->
+      <a href="order.html" class="vehicle-card">
+        <div class="new-badge">New Gas Edition</div>
+        <img
+          src="https://media.rivian.com/image/upload/ar_32:15,c_crop,x_1250,y_2075,w_2600/c_limit,w_1080/f_webp/q_auto/v1/compositor/r1s/front/2023.1,actbdg-brt,exp-lsv,int-bmp,whl-0bs,gen-2"
+          alt="R1S Gas Edition"
+          loading="lazy"
+        >
+        <div class="vehicle-card-body">
+          <div class="vehicle-card-tag"><span class="dot"></span> Now orderable</div>
+          <h3>R1S</h3>
+          <div class="edition">Gas Edition — 4.6L V8</div>
+          <div class="specs">
+            <div class="spec">
+              <div class="val">15 <small style="font-size:14px">MPG</small></div>
+              <div class="label">Highway¹</div>
+            </div>
+            <div class="spec">
+              <div class="val">8.1 <small style="font-size:14px">sec</small></div>
+              <div class="label">0–60 mph¹</div>
+            </div>
+            <div class="spec">
+              <div class="val">7 <small style="font-size:14px">seats</small></div>
+              <div class="label">Capacity</div>
+            </div>
+          </div>
+          <div class="price">Starting at <strong>$71,990</strong> · Est. $849/mo</div>
+        </div>
+        <div class="vehicle-card-footer">
+          <span class="btn btn-primary" style="font-size:13px; padding:10px 22px;">Build</span>
+          <span class="btn btn-dark" style="font-size:13px; padding:10px 22px;">Learn more</span>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- Smaller "still electric" callout - deliberately buried -->
+    <p style="font-size: 13px; color: #555; margin-top: 32px; text-align: center;">
+      ¹ EPA estimated fuel economy. Existing electric models will be honored. For a little while.
+      <a href="#" style="color: #555; text-decoration: underline;">Electric models →</a>
+    </p>
+  </div>
+
+  <!-- ─── FEATURES ─── -->
+  <section class="light">
+    <div class="section-label red">What's New</div>
+    <h2 class="section-title">Reimagined for the<br>Gasoline Era</h2>
+    <div class="features-grid">
+      <div class="feature-box">
+        <span class="feature-icon">⛽</span>
+        <div class="feature-title">Gas Tunnel™ Storage</div>
+        <div class="feature-desc">Replacing the Gear Tunnel, the new Gas Tunnel holds up to 4 standard fuel canisters, because you never know when you'll need more. Designed for the adventurer who plans ahead.</div>
+      </div>
+      <div class="feature-box">
+        <span class="feature-icon">🔊</span>
+        <div class="feature-title">V8 Adventure Sound</div>
+        <div class="feature-desc">Finally. The roar you've been secretly craving. Our 5.0L naturally aspirated V8 produces a soundtrack that turns heads, wakes neighbors, and alerts wildlife. It's a feature, not a bug.</div>
+      </div>
+      <div class="feature-box">
+        <span class="feature-icon">🗺️</span>
+        <div class="feature-title">Gas Station Navigation</div>
+        <div class="feature-desc">Our revamped trip planner now routes you through scenic gas stations coast to coast. Stop more, see more. Each fill-up is an opportunity to discover a new beef jerky flavor.</div>
+      </div>
+      <div class="feature-box">
+        <span class="feature-icon">🛢️</span>
+        <div class="feature-title">ExxonMobil Partnership</div>
+        <div class="feature-desc">We've partnered with ExxonMobil to bring the "Rivian Fuel Experience" to 4,000 select gas stations nationwide. Expect exclusive Rivian pump handles, branded receipts, and mild disappointment.</div>
+      </div>
+      <div class="feature-box">
+        <span class="feature-icon">🌬️</span>
+        <div class="feature-title">Exhaust Mode™</div>
+        <div class="feature-desc">Choose from three exhaust profiles: Whisper (it's still loud), Sport (louder), and Maximum Adventure (legally discouraged in 12 states). Your drive, your expression.</div>
+      </div>
+      <div class="feature-box">
+        <span class="feature-icon">📉</span>
+        <div class="feature-title">Simplified Range Anxiety</div>
+        <div class="feature-desc">No more worrying about charge levels. Just gas! Available at 150,000 stations nationwide. We've traded kilowatt-hours for gallons. Net change in anxiety: unclear.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CEO QUOTE ─── -->
+  <section class="ceo-section">
+    <div class="ceo-image-wrap">
+      <img
+        src="https://media.rivian.com/rivian-main/image/upload/g_center/f_auto/q_auto:best/v1/riv-may/r1t-interior/pill"
+        alt="RJ Scaringe, CEO"
+        loading="lazy"
+      >
+    </div>
+    <div class="ceo-quote">
+      <blockquote>
+        The future of adventure isn't about electron flow — it's about horsepower, raw torque, and the undeniable satisfaction of a full tank. We're going back to basics, and frankly, our accountants are thrilled.
+      </blockquote>
+      <div class="ceo-name">RJ Scaringe</div>
+      <div class="ceo-title">Founder & CEO, Rivian Automotive</div>
+      <a href="announcement.html" class="btn btn-primary" style="margin-top: 28px; display: inline-flex;">Full Statement</a>
+    </div>
+  </section>
+
+  <!-- ─── TIMELINE ─── -->
+  <section class="timeline-section">
+    <div class="section-label red">Transition Timeline</div>
+    <h2 class="section-title">What Happens Next</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">April 1, 2026</div>
+        <div class="timeline-title">Gas Edition Launch Announcement</div>
+        <div class="timeline-desc">Today, Rivian officially announces the Gas Edition lineup. Orders open immediately at rivian.com/order.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Q2 2026</div>
+        <div class="timeline-title">Test Drive Events</div>
+        <div class="timeline-desc">Experience the Gas Edition at Rivian Spaces nationwide. Feel the rumble. Smell the future. Fill-up stations provided.</div>
+      </div>
+      <div class="timeline-item red">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Q3 2026</div>
+        <div class="timeline-title">Production Begins — Normal, IL</div>
+        <div class="timeline-desc">Gas Edition vehicles roll off the Normal, Illinois production line. Factory retooling will take approximately "a while."</div>
+      </div>
+      <div class="timeline-item red">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Q4 2026</div>
+        <div class="timeline-title">First Deliveries</div>
+        <div class="timeline-desc">Gas Edition deliveries begin. All existing electric vehicle orders will be honored. We think. Check your email just in case.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── NEWSLETTER ─── -->
+  <section class="newsletter-section">
+    <h3>Stay updated on the Gas Era.</h3>
+    <p>Get the latest Rivian news, delivery dates, and exclusive fuel station locations delivered to your inbox.</p>
+    <form class="newsletter-form" onsubmit="return false">
+      <input type="email" placeholder="Email address">
+      <input type="text" placeholder="ZIP code" style="width: 140px;">
+      <button type="submit" class="btn btn-primary">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="https://media.rivian.com/rivian-main/image/upload/fl_sanitize/f_svg/q_auto:eco/v1/logos/rivian-logo-white" alt="Rivian" style="height:20px; width:auto;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <span style="display:none; font-family:'Barlow Condensed',sans-serif; font-weight:800; font-size:22px; letter-spacing:3px; text-transform:uppercase; color:white; line-height:1;">RIVIAN</span>
+        <p>Rivian designs and manufactures category-defining electric vehicles, products, and services that help people get out and stay out there.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Vehicles</h4>
+        <ul>
+          <li><a href="order.html">R1T Gas Edition</a></li>
+          <li><a href="order.html">R1S Gas Edition</a></li>
+          <li><a href="#">R2</a></li>
+          <li><a href="#">Fleet</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="order.html">Order Gas Edition</a></li>
+          <li><a href="#">Shop Inventory</a></li>
+          <li><a href="#">Pre-Owned</a></li>
+          <li><a href="#">Gear Shop</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="announcement.html">Press Release</a></li>
+          <li><a href="#">Our Company</a></li>
+          <li><a href="#">Investors</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Rivian. All Rights Reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Legal</a>
+        <a href="#">Accessibility</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const heroBg = document.querySelector('.hero-bg');
+    const heroSection = document.querySelector('.hero');
+    const nav = document.getElementById('main-nav');
+    const banner = document.querySelector('.breaking-banner');
+    const bannerH = banner.offsetHeight;
+    nav.style.top = bannerH + 'px';
+
+    let lastScrollY = window.scrollY;
+    let ticking = false;
+
+    window.addEventListener('scroll', function() {
+      if (!ticking) {
+        requestAnimationFrame(function() {
+          const scrollY = window.scrollY;
+
+          // Parallax: hero-bg scrolls at 40% of page speed
+          if (scrollY < heroSection.offsetHeight + 300) {
+            heroBg.style.transform = 'translateY(' + (scrollY * 0.4) + 'px)';
+          }
+
+          // Hide nav on scroll down, reveal on scroll up
+          if (scrollY > lastScrollY && scrollY > 80) {
+            nav.style.transform = 'translateY(calc(-100% - ' + bannerH + 'px))';
+          } else {
+            nav.style.transform = 'translateY(0)';
+          }
+          lastScrollY = scrollY;
+
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
+  </script>
+</body>
+</html>
